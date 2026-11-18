@@ -1,0 +1,66 @@
+{
+ "stages": [
+  {
+   "from_samples": 0,
+   "settings": {
+    "n_envs": 16384,
+    "rollout": 16,
+    "pool_factor": 4,
+    "total_samples": 750000000.0,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "lr_end": 3e-05,
+    "epochs": 2,
+    "minibatches": 8,
+    "clip": 0.2,
+    "ent_coef": 0.01,
+    "ent_coef_end": 0.001,
+    "vf_coef": 0.5,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.05,
+    "max_depth": 30,
+    "cur_threshold": 0.5,
+    "cur_explore": 0.15,
+    "limit_slope": 0,
+    "limit_knee": 10,
+    "limit_cap": 100,
+    "d_model": 1024,
+    "n_res": 2,
+    "hidden": 512,
+    "head": 512
+   }
+  },
+  {
+   "from_samples": 750256128,
+   "settings": {
+    "n_envs": 16384,
+    "rollout": 16,
+    "pool_factor": 4,
+    "total_samples": 1900000000.0,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0002,
+    "lr_end": 3e-05,
+    "epochs": 2,
+    "minibatches": 8,
+    "clip": 0.2,
+    "ent_coef": 0.0044,
+    "ent_coef_end": 0.001,
+    "vf_coef": 0.5,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.05,
+    "max_depth": 30,
+    "cur_threshold": 0.5,
+    "cur_explore": 0.4,
+    "limit_slope": 20,
+    "limit_knee": 10,
+    "limit_cap": 200,
+    "d_model": 1024,
+    "n_res": 2,
+    "hidden": 512,
+    "head": 512
+   }
+  }
+ ]
+}
